@@ -555,11 +555,11 @@ class coming_soon_admin_menu {
 							</td>
 							<td style="vertical-align: top !important;">
 
-								<span style="display:inline-block; width:45px;">
+								<span style="display:inline-block; width:65px;">
 									<input class="pro_input" type="text" onchange="refresh_countdown()" placeholder="Day" id="coming_soon_page_countdownday" size="2" value="" />
 									<small style="display:block">Day</small>
 								</span>
-								<span style="display:inline-block; width:65px;">
+								<span style="display:inline-block; width:85px;">
 									<input class="pro_input" type="text" onchange="refresh_countdown()" placeholder="Hour" id="coming_soon_page_countdownhour" size="5" value="" />
 									<small>Hour</small>
 								</span>
