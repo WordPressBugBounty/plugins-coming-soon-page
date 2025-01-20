@@ -54,10 +54,8 @@ class coming_soon_admin_menu {
         add_action('admin_print_styles-' . $featured_theme_page, array($this, 'featured_themes_js_css'));
         add_action('admin_print_styles-' . $hire_expert, array($this, 'hire_expert_js_css'));
 
-		if (isset($submenu['coming-soon']))
+		if (isset($submenu['coming-soon'])){
 			add_submenu_page('coming-soon', "Support or Any Ideas?", "<span style='color:#00ff66' >Support or Any Ideas?</span>", 'manage_options', "wpdevart_comingsoon_any_ideas", array($this, 'any_ideas'), 155);
-		
-			if (isset($submenu['coming-soon'])) {
 			$count_pages = count($submenu['coming-soon'])-1;
 			$submenu['coming-soon'][$count_pages][2] = esc_url(wpdevart_comingsoon_support_url);
 		}
