@@ -23,7 +23,6 @@ class coming_soon_admin_menu {
 			'sucsses_mailed' => 'Your message was sent successfully.',
 			'error_maied' => 'error sending email',
 			'authorize_problem' => 'Authorization Problem'
-
 		);
 
 		$this->menu_name = $param['menu_name'];
@@ -167,7 +166,6 @@ class coming_soon_admin_menu {
 			<div style="clear:both"> </div>
 		</div>
 		<br>
-
 		<div class="wp-table right_margin">
 			<table class="wp-list-table widefat fixed posts">
 				<thead>
@@ -223,7 +221,6 @@ class coming_soon_admin_menu {
 	/*#########################  Logo Function  #################################*/
 
 	public function generete_logo_section($page_parametrs) {
-
 	?>
 		<div class="main_parametrs_group_div closed_params ">
 			<div class="head_panel_div" title="Click to toggle">
@@ -726,7 +723,6 @@ class coming_soon_admin_menu {
 	/*#########################  Maintenance page Progress bar function #################################*/
 
 	public function generete_progressbar_section($page_parametrs) {
-
 	?>
 		<div class="main_parametrs_group_div closed_params ">
 			<div class="head_panel_div" title="Click to toggle">
@@ -856,7 +852,6 @@ class coming_soon_admin_menu {
 	/*#########################  Maintenance page Subscribe function #################################*/
 
 	public function generete_subscribe_section($page_parametrs) {
-
 	?>
 		<div class="main_parametrs_group_div closed_params ">
 			<div class="head_panel_div" title="Click to toggle">
@@ -1511,7 +1506,6 @@ class coming_soon_admin_menu {
 	}
 	/*#########################  Except Page or IP Part  #################################*/
 	public function generete_except_section($page_parametrs) {
-
 	?>
 		<div class="main_parametrs_group_div closed_params ">
 			<div class="head_panel_div" title="Click to toggle">
@@ -1713,7 +1707,6 @@ class coming_soon_admin_menu {
 								Elements ordering<span class="pro_feature"> (pro)</span> <span title="Choose the order of showing elements on coming soon page(you can move all elements using drop down functionality)." class="desription_class">?</span>
 							</td>
 							<td>
-
 								<ul id="coming_soon_sortable">
 									<li date-value="logo" class="ui-state-default">Logo<span class="ui-icon ui-icon-arrowthick-2-n-s"></span></li>
 									<li date-value="title" class="ui-state-default">Title<span class="ui-icon ui-icon-arrowthick-2-n-s"></span></li>
@@ -1727,7 +1720,6 @@ class coming_soon_admin_menu {
 								</ul>
 							</td>
 						</tr>
-
 					</tbody>
 					<tfoot>
 						<tr>

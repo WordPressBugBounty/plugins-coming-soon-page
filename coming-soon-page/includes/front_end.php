@@ -289,13 +289,6 @@ class coming_soon_front_end {
 				echo '#descrip_footer{margin-top:' . esc_html($this->params['coming_soon_page_message_footer_top_distance']) . 'px;text-align:' . esc_html($this->text_align($this->params['coming_soon_page_message_footer_in_content_position'])) . ';}';
 			}
 
-			/*############# Footer JS function ################*/
-
-			private function generete_message_footer_javascript() {
-			}
-
-
-
 			/*################################################################################### Social Buttons function ###########################################################################*/
 			private function create_socialis_html() {
 				if ($this->params['coming_soon_page_socialis_enable']) {
