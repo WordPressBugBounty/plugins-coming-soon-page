@@ -43,12 +43,13 @@ class coming_soon_admin_menu {
 		$sub_men_cap = str_replace(' ', '-', $this->menu_name);
 		$main_page 	 		 = add_menu_page('Coming Soon', 'Coming Soon', 'manage_options', 'coming-soon', array($this, 'main_menu_function'), esc_url($this->plugin_url) . 'images/menu_icon.png');
 		$page_coming_soon	  =	add_submenu_page('coming-soon',  'Coming Soon',  'Coming Soon', 'manage_options','coming-soon', array($this, 'main_menu_function'));
-		$page_coming_soon	  = add_submenu_page('coming-soon', 'Subscribers', 'Subscribers', 'manage_options', 'mailing-list-subscribers', array($this, 'mailing_list'));
+		$page_coming_soon_subscribers	  = add_submenu_page('coming-soon', 'Subscribers', 'Subscribers', 'manage_options', 'mailing-list-subscribers', array($this, 'mailing_list'));
 		$featured_page	 	  = add_submenu_page('coming-soon', 'Featured Plugins', 'Featured Plugins', 'manage_options', 'coming-soon-featured-plugins', array($this, 'featured_plugins'));
 		$featured_theme_page = add_submenu_page("coming-soon", "Featured Themes", "Featured Themes", 'read', "coming-soon_featured_themes", array($this, 'featured_themes'));
         $hire_expert = add_submenu_page("coming-soon", 'Hire an Expert', '<span style="color:#00ff66" >Hire an Expert</span>', 'read', "coming-soon_hire_expert", array($this, 'hire_expert'));
 		add_action('admin_print_styles-' . $main_page, array($this, 'menu_requeried_scripts'));
 		add_action('admin_print_styles-' . $page_coming_soon, array($this, 'menu_requeried_scripts'));
+		add_action('admin_print_styles-' . $page_coming_soon_subscribers, array($this, 'menu_requeried_scripts'));
 		add_action('admin_print_styles-' . $featured_page, array($this, 'featured_plugins_js_css'));
         add_action('admin_print_styles-' . $featured_theme_page, array($this, 'featured_themes_js_css'));
         add_action('admin_print_styles-' . $hire_expert, array($this, 'hire_expert_js_css'));
@@ -112,7 +113,7 @@ class coming_soon_admin_menu {
 			echo esc_html($this->text_parametrs['authorize_problem']);
 			die();
 		}
-		$kk = 1;
+		$updated = 1;
 		if (isset($_POST['coming_soon_options_nonce']) && wp_verify_nonce($_POST['coming_soon_options_nonce'], 'coming_soon_options_nonce')) {
 			$curent_page = sanitize_text_field($_POST['curent_page']);
 			foreach ($this->databese_parametrs[$_POST['curent_page']] as $key => $value) {
@@ -124,14 +125,14 @@ class coming_soon_admin_menu {
 					}
 					update_option($key, stripslashes_deep($sanitize_post));
 				} else {
-					$kk = 0;
+					$updated = 0;
 					printf($this->text_parametrs['error_in_saving'], $key);
 				}
 			}
 		} else {
 			die(esc_html($this->text_parametrs['authorize_problem']));
 		}
-		if ($kk == 0) {
+		if ($updated == 0) {
 			exit;
 		}
 		die(esc_html($this->text_parametrs['parametrs_sucsses_saved']));
