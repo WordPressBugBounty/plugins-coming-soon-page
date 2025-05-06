@@ -567,7 +567,7 @@ class coming_soon_admin_menu {
 						</tr>
 						<tr>
 							<td>
-								Countdown Timer date<span class="pro_feature"> (pro)</span> <span title="Type here the Countdown time(days, hours), then select the Countdown start date." class="desription_class">?</span>
+								Countdown Timer date<span class="pro_feature"> (pro)</span> <span title="Type here the Countdown time(days, hours), then select the Countdown start date. Days and hours will be counted from start date." class="desription_class">?</span>
 							</td>
 							<td style="vertical-align: top !important;">
 
