@@ -208,7 +208,7 @@ button{
 .save_section_parametrs.padding_loading{
 	width: 130px !important;
 }
- .save_all_section_parametrs{
+.save_all_section_parametrs{
 	width: 130px;
 	text-align: left;
 	overflow:hidden;
@@ -304,10 +304,8 @@ button{
 	float:left;
 	padding:0px;
 	margin:0px;
+	line-height: 27px;
 }
-
-
-
 
 /***************************************      SUBSCRIB PAGE STYLE      ********************************************/
 

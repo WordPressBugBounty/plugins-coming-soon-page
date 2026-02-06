@@ -3,8 +3,8 @@ Contributors: wpdevart
 Donate link: https://wpdevart.com/wordpress-coming-soon-plugin/
 Tags: coming soon, wordpress coming soon, maintenance, maintenance mode, under construction
 Requires at least: 3.4.0
-Tested up to: 6.8
-Stable tag: 3.8.5
+Tested up to: 6.9
+Stable tag: 3.8.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -851,6 +851,18 @@ No dear users, you need to pay only once for pro version.
 = 3.8.5 ==
 
 *  tested.
+
+= 3.8.6 ==
+
+*  code improved.
+
+= 3.8.7 ==
+
+*  Admin UI changes.
+
+= 3.8.8 ==
+
+*  Admin UI changes.
 
 ==Step by step guide==
 

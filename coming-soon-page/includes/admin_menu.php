@@ -172,7 +172,7 @@ class coming_soon_admin_menu {
 				<thead>
 					<tr>
 						<th>
-							<h4 class="live_previev">Parameters <a target="_blank" href="<?php echo esc_url(site_url()); ?>/?special_variable_for_live_previev=sdfg564sfdh645fds4ghs515vsr5g48strh846sd6g41513btsd" style="color:#7052fb;">(Live Preview)</a></h4>
+							<h4 class="live_previev">Parameters <a class="button wpda-live-previev" target="_blank" href="<?php echo esc_url(site_url()); ?>/?special_variable_for_live_previev=sdfg564sfdh645fds4ghs515vsr5g48strh846sd6g41513btsd" style="color:#7052fb;">Live Preview</a></h4>
 							<span class="save_all_paramss"> <button type="button" id="save_all_parametrs" class="save_all_section_parametrs button button-primary"><span class="save_button_span">Save All Sections</span> <span class="saving_in_progress"> </span><span class="sucsses_save"> </span><span class="error_in_saving"> </span></button></span>
 						</th>
 					</tr>
